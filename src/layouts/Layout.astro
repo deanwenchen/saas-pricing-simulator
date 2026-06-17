@@ -3,4 +3,21 @@ interface Props { title: string; description?: string; }
 const { title, description = 'SaaS Pricing & LTV/CAC Calculator' } = Astro.props;
 ---
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>{title}</title><meta name="description" content={description} /></head><body class="min-h-screen bg-gradient-to-br from-indigo-50 to-violet-50"><div class="container mx-auto px-4 py-8 max-w-4xl"><header class="text-center mb-8"><h1 class="text-4xl font-bold text-indigo-600 mb-2">SaaS Pricing & LTV/CAC Calculator</h1><p class="text-gray-600">Calculate LTV, CAC, and break-even</p></header><main><div class="bg-white rounded-xl shadow-lg p-6 mb-6"><slot /></div></main><footer class="text-center mt-8 text-gray-500 text-sm"><p>&copy; 2025 SaaS Pricing Calculator.</p></footer></div></body></html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>{title}</title><meta name="description" content={description} /></head><body class="min-h-screen bg-gradient-to-br from-indigo-50 to-violet-50"><div class="container mx-auto px-4 py-8 max-w-4xl"><header class="text-center mb-8"><h1 data-i18n="headerTitle" class="text-4xl font-bold text-indigo-600 mb-2">SaaS Pricing & LTV/CAC Calculator</h1><p data-i18n="headerDesc" class="text-gray-600">Calculate LTV, CAC, and break-even</p></header><main><div class="bg-white rounded-xl shadow-lg p-6 mb-6"><slot /></div></main><footer class="text-center mt-8 text-gray-500 text-sm"><p data-i18n="footerCopy">&copy; 2025 SaaS Pricing Calculator.</p>    <div class="mt-8 pt-8 border-t border-gray-200">
+      <h2 class="text-gray-400 text-xs font-semibold uppercase tracking-widest mb-4 text-center">More Free Online Tools</h2>
+      <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs">
+              <a href="https://2048.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">2048 Game</a>
+              <a href="https://cat-age-calc.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Cat Age Calculator</a>
+              <a href="https://freelance-rate-calc.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Freelance Rate Calculator</a>
+              <a href="https://jargon.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Jargon Translator</a>
+              <a href="https://keto-carb.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Keto Carb Calculator</a>
+              <a href="https://pass-gen.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Password Generator</a>
+              <a href="https://pet-toxicity.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Pet Toxicity Calculator</a>
+              <a href="https://pet-water.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Pet Water Intake Calculator</a>
+              <a href="https://running-pace.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Running Pace Calculator</a>
+              <a href="https://timezone.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">Timezone Meeting Finder</a>
+              <a href="https://what-to-eat.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">What to Eat Wheel</a>
+              <a href="https://yt-money.lazytoolshub.top" class="text-gray-400 hover:text-gray-600 transition-colors" target="_blank" rel="noopener">YouTube Money Calculator</a>
+      </div>
+    </div>
+  </footer></div></body></html>
